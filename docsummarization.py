@@ -37,7 +37,7 @@ Document Content: {text}
 
 final_prompt_template=PromptTemplate(input_variables=['text'],template=final_prompt)
 
-uploaded_files=st.file_uploader("Choose A PDf file",type="pdf",accept_multiple_files=True)
+uploaded_files=st.file_uploader("Choose A PDf file",type="pdf",accept_multiple_files=False)
 if uploaded_files:
     documents=[]
     for uploaded_file in uploaded_files:
