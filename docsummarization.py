@@ -19,7 +19,7 @@ st.set_page_config(page_title="LangChain: Summarize Text From a PDF", page_icon=
 st.title("🦜 LangChain: Summarize Text From a PDF")
 st.subheader('Summarize Text')
 
-model =ChatGroq(model="Gemma-7b-It")
+model =ChatGroq(model="Llama3-8b-8192")
 
 chunks_prompt = """
 Please summarize the following excerpt from the uploaded document. Focus on capturing the key points and main ideas clearly:
